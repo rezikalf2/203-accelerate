@@ -49,6 +49,17 @@ Text Domain:  accelerate-theme-child
 	text-transform: uppercase;
 }
 
+.featured-work {
+	display: flex;
+	justify-content: center;
+	
+}
+
+.case-studies-on-home {
+	max-width: 75%;
+	
+}
+
 .case-studies-on-home h3{
 	text-align: center;
 	font-size: 1.5em;
@@ -67,13 +78,31 @@ Text Domain:  accelerate-theme-child
 
 
 /* case  Studies */
+.case-study {
+	display: flex;
+	align-content: center;
+	margin-bottom: 5%
+}
 .case-study-sidebar {
 	float: left;
 	width: 300px;
+	margin-right: 5%;
+	
 }
+
+.case-study-sidebar p{
+	text-align: justify;
+	margin-right: 5%;
+}
+
+.case-study-images {
+	width: 600px;
+}
+
 .case-study-images img {
 	float: right;
-	width: 600px;
+	width: 100%;
+	height: auto;
 	margin-bottom: 20px;
 }
 
@@ -83,8 +112,100 @@ Text Domain:  accelerate-theme-child
 	color: #45ac9d;
 	text-transform: uppercase;
 }
+
+/*footer*/
+ul.social-media-menu {
+	text-align: right;
+}
+
+ul.social-media-menu li{
+	display: inline-block;
+}
+
+ul.social-media-menu li a::before{
+	display: inline-block;
+	font-family: 'Fontawesome';
+	content: '\f0a9';
+	font-size: 1.25rem;
+	padding: 0.3em;
+	line-height: 1em;
+	width: 1em;
+	height: 1em;
+	border-radius: 50%;
+	text-align: center;
+	color: #fff;
+	background: #3b3b3b;
 	
+}
+
+ul.social-media-menu li a[href*="facebook.com"]::before {content: '\f09a';}
+ul.social-media-menu li a[href*="twitter.com"]::before {content: '\f099';}
+ul.social-media-menu li a[href*="linkedin.com"]::before {content: '\f0e1';}
+ul.social-media-menu li a[href*="mailto.com"]::before {content: '\f0e0';}
+ul.social-media-menu li a[href*="dribbble.com"]::before {content: '\f17d';}
+ul.social-media-menu li a[href*="plus.google.com"]::before {content: '\f0d5';}
+ul.social-media-menu li a[href*="pinterest.com"]::before {content: '\f0d2';}
+ul.social-media-menu li a[href*="github.com"]::before {content: '\f09b';}
+ul.social-media-menu li a[href*="tumblr.com"]::before {content: '\f173';}
+ul.social-media-menu li a[href*="youtube.com"]::before {content: '\f167';}
+ul.social-media-menu li a[href*="flickr.com"]::before {content: '\f16e';}
+ul.social-media-menu li a[href*="vimeo.com"]::before {content: '\f194';}
+ul.social-media-menu li a[href*="inatagram.com"]::before {content: '\f16d';}
+ul.social-media-menu li a[href*="codepen.com"]::before {content: '\f1cb';}
+
+/*End- Footer*/
+
+/*Accessibility source: https://make.wordpress.org/accessibility/handbook/markup/the-css-class-screen-reader-text/*/
+/* Text meant only for screen readers. */
+.screen-reader-text {
+	border: 0;
+	clip: rect(1px, 1px, 1px, 1px);
+	clip-path: inset(50%);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+	word-wrap: normal !important;
+  }
+
+  .screen-reader-text:focus {
+	background-color: #eee;
+	clip: auto !important;
+	clip-path: none;
+	color: #444;
+	display: block;
+	font-size: 1em;
+	height: auto;
+	left: 5px;
+	line-height: normal;
+	padding: 15px 23px 14px;
+	text-decoration: none;
+	top: 5px;
+	width: auto;
+	z-index: 100000; /* Above WP toolbar. */
+  }
+
+
+
+
 /*
+.social-media-navigation i {
+	color: white;
+	border-radius: 50%;
+	background-color:black;
+	padding:5%
+}
+
+.f {
+	min-width: 17.5%;
+	text-align: center;
+}
+*/
+
+	
+/*notes from hard coding case studies in wp page
 <article class="case-study"><aside class="case-study-sidebar">
 <h2>MailChimp Campaign</h2>
 <h4>Contest strategy, Design &amp; Development</h4>
