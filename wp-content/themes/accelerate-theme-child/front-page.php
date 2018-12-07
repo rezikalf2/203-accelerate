@@ -36,6 +36,46 @@ get_header(); ?>
        <?php endwhile; ?> 
 	</div>
 </section>
+<section  class="services-land-page-main">
+
+	<?php if( get_field('introduction_intro_title','47361') ): ?>
+		<h4 class="intro-title" ><?php the_field('introduction_intro_title','47361'); ?></h4>
+	<?php endif; ?>
+	<div  class="services-land-page">
+	<div class="service-1-lp">
+		<?php if( get_field('service_1_logo','47361') ): ?>
+			<img class="service-1-logo" src="<?php the_field('service_1_logo','47361'); ?>" />
+		<?php endif; ?>
+		<?php if( get_field('service_1_title','47361') ): ?>
+			<h2 class="service-1-title" ><?php the_field('service_1_title','47361'); ?></h2>
+		<?php endif; ?>
+	</div><!-- end of service 1 lp-->
+	<div class="service-2-lp">
+		<?php if( get_field('service_2_logo','47361') ): ?>
+			<img class="service-1-logo" src="<?php the_field('service_2_logo','47361'); ?>" />
+		<?php endif; ?>
+		<?php if( get_field('service_2_title','47361') ): ?>
+			<h2 class="service-1-title" ><?php the_field('service_2_title','47361'); ?></h2>
+		<?php endif; ?>
+	</div><!-- end of service 2 lp-->
+	<div class="service-3-lp">
+		<?php if( get_field('service_3_logo','47361') ): ?>
+			<img class="service-1-logo" src="<?php the_field('service_3_logo','47361'); ?>" />
+		<?php endif; ?>
+		<?php if( get_field('service_3_title','47361') ): ?>
+			<h2 class="service-1-title" ><?php the_field('service_3_title','47361'); ?></h2>
+		<?php endif; ?>
+	</div><!-- end of service 3 lp-->
+	<div class="service-4-lp">
+		<?php if( get_field('service_4_logo','47361') ): ?>
+			<img class="service-1-logo" src="<?php the_field('service_4_logo','47361'); ?>" />
+		<?php endif; ?>
+		<?php if( get_field('service_4_title','47361') ): ?>
+			<h2 class="service-1-title" ><?php the_field('service_4_title','47361'); ?></h2>
+		<?php endif; ?>
+	</div><!-- end of service 4 lp-->
+	</div><!-- end of  class="services-land-page"-->
+</section> <!--end of section services on landing page-->
 <section class="recent-posts">
  <div class="site-content">
   <div class="blog-post">
@@ -47,6 +87,14 @@ get_header(); ?>
      <?php endwhile; ?> 
     <?php wp_reset_query(); ?>
   </div>
+  <div class="feed">
+	  <h4>From the news</h4>
+  		<?php if ( is_active_sidebar( 'sidebar-2' ) ) : ?>
+			<div id="secondary" class="widget-area" role="complementary">
+				<?php dynamic_sidebar( 'sidebar-2' ); ?>
+			</div>
+		  <?php endif; ?>
+	</div><!-- end of feed class -->
  </div>
 </section>
 

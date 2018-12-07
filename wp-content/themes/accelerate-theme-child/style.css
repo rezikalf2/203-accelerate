@@ -49,6 +49,24 @@ Text Domain:  accelerate-theme-child
 	text-transform: uppercase;
 }
 
+.feed {
+	width: 30%;
+	float: left;
+	margin-bottom: 2em;
+	margin-left: 2em;
+	font-size: 1em;
+}
+
+.feed span::before {content: '\A'; white-space: pre;} 
+.feed cite::before {content: '\A'; white-space: pre;} 
+
+.feed h4 {
+    font: 700 1em/1.75 'Montserrat', 'Open Sans', Arial, sans-serif;
+    color: #a6a6a6;
+    text-transform: uppercase;
+    margin: 3em 0 .5em;
+}
+
 .featured-work {
 	display: flex;
 	justify-content: center;
@@ -64,7 +82,7 @@ Text Domain:  accelerate-theme-child
 	text-align: center;
 	font-size: 1.5em;
 	color: #a6a6a6;
-	font-size: 700;s
+	font-size: 700;
 }
 
 .each-case-on-home {
@@ -76,6 +94,24 @@ Text Domain:  accelerate-theme-child
 	color: #a6a6a6;
 }
 
+.services-land-page-main {
+	max-width: 75%;
+	margin: auto;
+	text-align: center;
+}
+
+.services-land-page-main h4{
+	
+}
+
+.services-land-page {
+	display: flex;
+	margin-top: 5%;
+	justify-content: space-around;
+	font-size: 0.8em;
+	color: #a6a6a6;
+	font-size: 700;
+}
 
 /* case  Studies */
 .case-study {
@@ -170,7 +206,7 @@ ul.social-media-menu li a[href*="codepen.com"]::before {content: '\f1cb';}
 	word-wrap: normal !important;
   }
 
-  .screen-reader-text:focus {
+.screen-reader-text:focus {
 	background-color: #eee;
 	clip: auto !important;
 	clip-path: none;
@@ -185,10 +221,194 @@ ul.social-media-menu li a[href*="codepen.com"]::before {content: '\f1cb';}
 	top: 5px;
 	width: auto;
 	z-index: 100000; /* Above WP toolbar. */
-  }
+}
+
+/*Ninja form Contact list*/
+.page-id-47362 h2 {
+	font-family: 'Montserrat';
+	font-weight: 700;
+}
+
+.page-id-47362 #nf-field-4{
+	background-color:#45ac9d;
+} 
+
+.page-id-47362 .nf-form-content, .page-id-47362 p, .page-id-47362 h2 {
+	width: 70%;
+	margin: auto;
+}
+
+.nf-form-fields-required, .ninja-forms-req-symbol, #nf-error-1, #nf-error-2, #nf-error-3, .nf-fail, .nf-error, .nf-error-wrap, ne-error-3{
+	display: none;
+}
+.page-id-47362 #nf-field-5-container .nf-field-label {
+	display: none;
+}
+.page-id-47362 #nf-field-5-container .nf-field-element input{
+	border: none;
+}
+	
+
+.page-id-47362 #nf-field-4 {
+	font-family: 'Montserrat';
+	float: right;
+	min-width: 200px;
+	font-size: 1.25em;
+	font-weight: 700;
+}
 
 
 
+/* About Page custom fields*/
+
+
+.about-head {
+	position: relative;
+    text-align: center;
+	color: white;
+	width: 100%;
+}
+.head-text {
+	width: 50%;
+	font-size: 1.5em;
+	font-weight: 600;
+	position: absolute;
+    top: 30%;
+    left: 50%;
+	transform: translate(-50%, -50%);
+	color: white;
+	font-family: 'Montserrat';
+}
+.head-image {
+	width: 100%;
+
+}
+
+
+.about-content {
+	width: 70%;
+	margin: auto;
+}
+.intro {
+	margin: auto;
+	width: 50%;
+	text-align: center;
+	margin-bottom: 5em;
+}
+
+.service-1 {
+	display: flex;
+	justify-content: space-around;
+	margin-bottom: 2em;
+}
+.service-1-logo {
+	max-height: 212px;
+	display: flex;
+	align-self: center;
+	justify-content: center;
+}
+
+.service-1-details {
+	display: flex;
+	flex-direction: column;
+	
+	width: 50%;
+}
+
+.service-2 {
+	display: flex;
+	justify-content: space-around;
+	margin-bottom: 2em;
+}
+
+
+.service-2-logo {
+	float: right;
+	max-height: 212px;
+	display: flex;
+	align-self: center;
+	justify-content: center;
+}
+
+.service-2-details {
+   display: flex;
+   flex-direction: column;
+   
+   width: 50%;
+   
+}
+
+.call-to-action {
+	display: flex;
+	justify-content: space-around;
+	margin-bottom: 2em;
+	border-top: 1px solid #a6a6a6;
+}
+
+.call-to-action-invitation {
+	float: left;
+}
+
+.call-to-action-button {
+	background-color: #45ac9d;
+	color: white;
+	padding: 0 2em 0 2em;
+}
+
+/*404 page*/
+.background-404 {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+.text-404 {
+	position: absolute;
+    top: 30%;
+    left: 70%;
+	transform: translate(-50%, -50%);
+	font-family: 'Press Start 2P', cursive;
+}
+.background-404 a{
+	   color: white;
+	   text-decoration-line: underline;
+	   text-decoration-color: chartreuse;
+}
+/*
+
+margin: auto;
+	display: flex;
+	align-content: center;
+	align-items: center;
+	width: 70%;
+	flex-direction: column;
+
+.page-id-47362 #nf-field-1-wrap {
+	
+	width: 100%;
+}
+.page-id-47362 #nf-field-2-wrap {
+
+	width: 100%;
+}
+
+*/
+
+/*hfeed.site-main.site-content.ssmain-content*/
+
+
+/*.nf-form-content {
+	display: flex;
+}
+#nf-field-1-container {
+	max-width: 40%;
+	display: flex;
+	float: left;
+}
+#nf-field-2-container {
+	max-width: 40%;
+	display: flex;
+	float: right;
+}*/
 
 /*
 .social-media-navigation i {
